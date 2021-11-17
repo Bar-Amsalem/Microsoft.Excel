@@ -11,14 +11,4 @@ namespace Microsoft.Excel.InterviewC
     }
 
 }
-/*
-2
->3
->>5
->>>7
->4
->>null
->>12
 
-
-*/

@@ -41,7 +41,7 @@ namespace Microsoft.Excel.InterviewC
 
         }
 
-        public INode Deserialize(string txt, ref int offset)
+        private INode Deserialize(string txt, ref int offset)
         {
             var node = new Node(int.Parse(txt.Skip(offset).TakeWhile(c => SpaicelChars.Contains(c) == false).ToArray()));
             for (; offset < txt.Length && SpaicelChars.Contains(txt[offset]) == false; offset++) ;
